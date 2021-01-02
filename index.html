@@ -1,47 +1,126 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Knox &amp; Kindred Soap Co.</title>
-    <meta name="author" content="knox" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicons/apple-touch-icon.png"/>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicons/favicon-32x32.png"/>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicons/favicon-16x16.png"/>
-    <link rel="manifest" href="images/favicons/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="images/favicons/safari-pinned-tab.svg"
-      color="#5bbad5"/>
-    <meta name="msapplication-TileColor" content="#00aba9" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="main.css" />
+    <meta name="author" content="knox">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Architects+Daughter&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="main.css">
+    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </head>
   <body>
-    <header id="header"></header>
-      <img src="images/soap.svg" alt="soap bar" id="header-img" />
-      <h1>Knox &amp; Kindred Soap Co.</h1>
-      <nav id="nav-bar">
-        <ul>
-          <li><a href="#" class="nav-link">About</a></li>
-          <li><a href="#" class="nav-link">Pricing</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+    <header id="header" class="header">
+      <img src="images/soap.svg" alt="bar of soap icon" id="header-img" class="header__logo">
+      <h1 class="header__title">Knox &amp; Kindred Soap Co.</h1>
     </header>
+    <nav id="nav-bar" class="nav">
+      <ul class="nav__menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!--MAIN SECTION-->
+      <section id="about">
+        <video controls poster="images/product.jpeg" id="video">
+          <!--don't forget to add the actual video-->
+          <source src="" type="video/webm">
+          <source src="" type="video/mp4">
+          <p>Sorry, your browser doesn't support HTML5 video. Here's a <a href="#">link to the video </a> instead.</p>
+          <!--remember to check here: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content 
+          in order to add subtitles to the video if there is spoken content-->
+        </video>
+        <div>
+          <h2>Get to Know Us</h2>
+          <p>Kogi duis synth health goth pabst, pop-up readymade chicharrones etsy. Live-edge nostrud hashtag, chicharrones cloud bread pop-up kickstarter pitchfork. Cardigan keytar ad narwhal, gastropub direct trade plaid. Man braid YOLO helvetica succulents edison bulb. Hammock crucifix flannel snackwave cred meggings.</p>
+          <p>Aute wolf four dollar toast dolore normcore ad in excepteur sunt dreamcatcher ethical. Excepteur live-edge literally tempor artisan typewriter et tattooed dolore chillwave incididunt commodo chicharrones. Heirloom you probably haven't heard of them meh, esse tote bag ut excepteur wolf banh mi disrupt hella iPhone. Snackwave wayfarers microdosing, tacos disrupt prism do 8-bit af chillwave. Est nisi hot chicken organic selvage banh mi godard woke lomo semiotics brunch cliche. Edison bulb bushwick dolore lorem mlkshk incididunt. Ea literally twee, drinking vinegar waistcoat officia woke brooklyn esse health goth pickled in taiyaki magna.</p>
+        </div>
+      </section>
+      <!--PRODUCTS SECTION-->
+      <section id="products">
+        <h2>Our Products</h2>
+        <div>
+          <div>
+            <h3>Classic Castile</h3>
+            <img src="images/olive-color.svg" alt="stylized olive illustration"> 
+            <p>$6.99/bar</p>
+            <ul>
+              <li>Made with 100% Olive Oil</li>
+              <li>Kogi duis synth health</li>
+              <li>Excepteur live-edge</li>
+            </ul> 
+          </div>
+          <div>
+            <h3>Coconut and Olive Oil</h3>
+            <img src="images/coconut-color-2.svg" alt="stylized coconut illustration">
+            <p>$7.49/bar</p>
+            <ul>
+              <li>Made with an artisanal blend of coconut & olive oil</li>
+              <li>Kogi duis synth health</li>
+              <li>Excepteur live-edge</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Scented Soaps</h3>
+            <img src="images/scent-color.svg" alt="stylized essential oil bottle illustration">
+            <p>$8.99/bar</p>
+            <ul>
+              <li>Made with natural essential oils</li>
+              <li>Choose from a wide range of scents</li>
+              <li>Available for all recipes and soap types</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Specialty Soaps</h3>
+            <img src="images/custom-color.svg" alt="stylized chemistry beaker illustration">
+            <p>Contact for Pricing</p>
+            <ul>
+              <li>Have a special request?</li>
+              <li>Send us an email below</li>
+              <li>Excepteur live-edge</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--CONTACT SECTION-->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <div><!--TOP OF CONTACT-->
+            <div><!--NAME-->
+              <label for="name">Name:</label>
+              <input type="text" required autocomplete="name" placeholder="Kindred" id="name" name="name">
+            </div>
+            <div><!--EMAIL-->
+              <label for="email">Email:</label>
+              <input type="email" required autocomplete="email" placeholder="kindred.knox@soap.co" id="email" name="email">
+            </div>
+          </div>
+          <div><!--SUBJECT-->
+            <label for="subject">Subject:</label>
+            <input type="text" required placeholder="Subject" name="subject">
+          </div>
+          <div><!--MESSAGE-->
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Questions, comments, concerns..."></textarea>
+          </div>
+          <input type="submit" id="submit" value="Send">
+        </form>
+      </section>
+    </main>
     <footer>
-      <p><small>Icons made by<a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a></small></p>
+      <p><small>Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> and <a href="https://smashicons.com/">Smashicons</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a></small></p>
     </footer>
   </body>
 </html>
+

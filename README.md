@@ -6,4 +6,4 @@ This project is for a hypothetical soap company but may eventually be used as th
 
 ## Credits
 
-Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
+Icons made by [Freepik](https://www.flaticon.com/authors/freepik) and [Smashicons](https://smashicons.com/) from [www.flaticon.com](https://www.flaticon.com/)

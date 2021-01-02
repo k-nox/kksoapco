@@ -1,0 +1,42 @@
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+input, textarea {
+  font-size: inherit;
+  font-family: inherit;
+}
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4rem;
+}
+h2 {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 2rem;
+}
+h3 {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5rem;
+}
+small {
+  font-size: 0.625rem;
+}
+ul {
+  list-style-type: none;
+}
+.header {
+  display: flex;
+}
+.header__logo {
+  width: 5rem;
+}
+.nav {
+  position: fixed;
+  top: 0;
+}
+.nav__menu {
+  display: flex;
+}
