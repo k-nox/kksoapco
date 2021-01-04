@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Knox &amp; Kindred Soap Co.</title>
+    <title>Kindred &amp; Knox Soap Co.</title>
     <meta name="author" content="knox">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
@@ -19,40 +19,43 @@
   </head>
   <body>
     <header id="header" class="header">
-      <img src="images/soap.svg" alt="bar of soap icon" id="header-img" class="header__logo">
-      <h1 class="header__title">Knox &amp; Kindred Soap Co.</h1>
+      <div class="header__name">
+        <img src="images/soap.svg" alt="bar of soap icon" id="header-img" class="header__logo">
+        <h1 class="header__title">Kindred &amp; Knox Soap Co.</h1>
+      </div>
+      <nav id="nav-bar" class="header__nav">
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-list__item"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-list__item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav id="nav-bar" class="nav">
-      <ul class="nav__menu">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#products" class="nav-link">Products</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
     <main>
-      <!--MAIN SECTION-->
-      <section id="about">
-        <video controls poster="images/product.jpeg" id="video">
-          <!--don't forget to add the actual video-->
-          <source src="" type="video/webm">
-          <source src="" type="video/mp4">
-          <p>Sorry, your browser doesn't support HTML5 video. Here's a <a href="#">link to the video </a> instead.</p>
-          <!--remember to check here: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content 
-          in order to add subtitles to the video if there is spoken content-->
-        </video>
-        <div>
-          <h2>Get to Know Us</h2>
+      <!--ABOUT SECTION-->
+      <section id="about" class="about">
+        <div class="video-wrapper">
+          <video controls poster="images/product-poster.jpeg" id="video" class="about__video">
+            <!--don't forget to add the actual video-->
+            <source src="" type="video/webm">
+            <source src="" type="video/mp4">
+            <p>Sorry, your browser doesn't support HTML5 video. Here's a <a href="#">link to the video </a> instead.</p>
+            <!--remember to check here: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content in order to add subtitles to the video if there is spoken content-->
+          </video>
+        </div>
+        <div class="about__text">
+          <h2 class="about__header">Get to Know Us</h2>
           <p>Kogi duis synth health goth pabst, pop-up readymade chicharrones etsy. Live-edge nostrud hashtag, chicharrones cloud bread pop-up kickstarter pitchfork. Cardigan keytar ad narwhal, gastropub direct trade plaid. Man braid YOLO helvetica succulents edison bulb. Hammock crucifix flannel snackwave cred meggings.</p>
           <p>Aute wolf four dollar toast dolore normcore ad in excepteur sunt dreamcatcher ethical. Excepteur live-edge literally tempor artisan typewriter et tattooed dolore chillwave incididunt commodo chicharrones. Heirloom you probably haven't heard of them meh, esse tote bag ut excepteur wolf banh mi disrupt hella iPhone. Snackwave wayfarers microdosing, tacos disrupt prism do 8-bit af chillwave. Est nisi hot chicken organic selvage banh mi godard woke lomo semiotics brunch cliche. Edison bulb bushwick dolore lorem mlkshk incididunt. Ea literally twee, drinking vinegar waistcoat officia woke brooklyn esse health goth pickled in taiyaki magna.</p>
         </div>
       </section>
       <!--PRODUCTS SECTION-->
-      <section id="products">
-        <h2>Our Products</h2>
-        <div>
-          <div>
+      <section id="products" class="products">
+        <h2 class="products__header">Our Products</h2>
+        <div class="products__wrapper">
+          <div class="card">
             <h3>Classic Castile</h3>
-            <img src="images/olive-color.svg" alt="stylized olive illustration"> 
+            <img src="images/olive-color.svg" alt="stylized olive illustration" class="card__img"> 
             <p>$6.99/bar</p>
             <ul>
               <li>Made with 100% Olive Oil</li>
@@ -60,19 +63,19 @@
               <li>Excepteur live-edge</li>
             </ul> 
           </div>
-          <div>
+          <div class="card">
             <h3>Coconut and Olive Oil</h3>
-            <img src="images/coconut-color-2.svg" alt="stylized coconut illustration">
+            <img src="images/coconut-color-2.svg" alt="stylized coconut illustration" class="card__img">
             <p>$7.49/bar</p>
             <ul>
-              <li>Made with an artisanal blend of coconut & olive oil</li>
+              <li>Made with an artisanal blend of coconut &amp; olive oil</li>
               <li>Kogi duis synth health</li>
               <li>Excepteur live-edge</li>
             </ul>
           </div>
-          <div>
+          <div class="card">
             <h3>Scented Soaps</h3>
-            <img src="images/scent-color.svg" alt="stylized essential oil bottle illustration">
+            <img src="images/scent-color.svg" alt="stylized essential oil bottle illustration" class="card__img">
             <p>$8.99/bar</p>
             <ul>
               <li>Made with natural essential oils</li>
@@ -80,9 +83,9 @@
               <li>Available for all recipes and soap types</li>
             </ul>
           </div>
-          <div>
+          <div class="card">
             <h3>Specialty Soaps</h3>
-            <img src="images/custom-color.svg" alt="stylized chemistry beaker illustration">
+            <img src="images/custom-color.svg" alt="stylized chemistry beaker illustration" class="card__img">
             <p>Contact for Pricing</p>
             <ul>
               <li>Have a special request?</li>
@@ -123,4 +126,3 @@
     </footer>
   </body>
 </html>
-
