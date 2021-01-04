@@ -51,24 +51,24 @@
       </section>
       <!--PRODUCTS SECTION-->
       <section id="products" class="products">
-        <h2 class="products__header">Our Products</h2>
+        <h2 class="txt-ctr">Our Products</h2>
         <div class="products__wrapper">
           <div class="card">
             <h3>Classic Castile</h3>
             <img src="images/olive-color.svg" alt="stylized olive illustration" class="card__img"> 
-            <p>$6.99/bar</p>
-            <ul>
-              <li>Made with 100% Olive Oil</li>
+            <p class="card__pricing">$6.99/bar</p>
+            <ul class="card__list">
+              <li>100% Olive Oil</li>
               <li>Kogi duis synth health</li>
               <li>Excepteur live-edge</li>
             </ul> 
           </div>
           <div class="card">
-            <h3>Coconut and Olive Oil</h3>
+            <h3>Signature Blend</h3>
             <img src="images/coconut-color-2.svg" alt="stylized coconut illustration" class="card__img">
-            <p>$7.49/bar</p>
-            <ul>
-              <li>Made with an artisanal blend of coconut &amp; olive oil</li>
+            <p class="card__pricing">$7.49/bar</p>
+            <ul class="card__list">
+              <li>Blend of coconut &amp; olive oil</li>
               <li>Kogi duis synth health</li>
               <li>Excepteur live-edge</li>
             </ul>
@@ -76,18 +76,18 @@
           <div class="card">
             <h3>Scented Soaps</h3>
             <img src="images/scent-color.svg" alt="stylized essential oil bottle illustration" class="card__img">
-            <p>$8.99/bar</p>
-            <ul>
-              <li>Made with natural essential oils</li>
-              <li>Choose from a wide range of scents</li>
-              <li>Available for all recipes and soap types</li>
+            <p class="card__pricing">$8.99/bar</p>
+            <ul class="card__list">
+              <li>Natural essential oils</li>
+              <li>Wide range of scents</li>
+              <li>Available for all recipes</li>
             </ul>
           </div>
           <div class="card">
             <h3>Specialty Soaps</h3>
             <img src="images/custom-color.svg" alt="stylized chemistry beaker illustration" class="card__img">
-            <p>Contact for Pricing</p>
-            <ul>
+            <p class="card__pricing">Contact for Pricing</p>
+            <ul class="card__list">
               <li>Have a special request?</li>
               <li>Send us an email below</li>
               <li>Excepteur live-edge</li>
@@ -96,33 +96,33 @@
         </div>
       </section>
       <!--CONTACT SECTION-->
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-          <div><!--TOP OF CONTACT-->
-            <div><!--NAME-->
+      <section id="contact" class="contact">
+        <h2 class="txt-ctr">Contact Us</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form" class="contact__form">
+          <div class="contact__id"><!--TOP OF CONTACT-->
+            <div class="contact__component contact__component--id"><!--NAME-->
               <label for="name">Name:</label>
               <input type="text" required autocomplete="name" placeholder="Kindred" id="name" name="name">
             </div>
-            <div><!--EMAIL-->
+            <div class="contact__component contact__component--id"<!--EMAIL-->
               <label for="email">Email:</label>
               <input type="email" required autocomplete="email" placeholder="kindred.knox@soap.co" id="email" name="email">
             </div>
           </div>
-          <div><!--SUBJECT-->
+          <div class="contact__component"><!--SUBJECT-->
             <label for="subject">Subject:</label>
             <input type="text" required placeholder="Subject" name="subject">
           </div>
-          <div><!--MESSAGE-->
+          <div class="contact__component"><!--MESSAGE-->
             <label for="message">Message:</label>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Questions, comments, concerns..."></textarea>
           </div>
-          <input type="submit" id="submit" value="Send">
+          <input type="submit" id="submit" value="Send" class="contact__component">
         </form>
       </section>
     </main>
     <footer>
-      <p><small>Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> and <a href="https://smashicons.com/">Smashicons</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a></small></p>
+      <p class="txt-ctr"><small>Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> and <a href="https://smashicons.com/">Smashicons</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a></small></p>
     </footer>
   </body>
 </html>

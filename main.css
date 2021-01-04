@@ -14,6 +14,7 @@ input,
 textarea {
   font-size: inherit;
   font-family: inherit;
+  resize: none;
 }
 h1 {
   font-family: "Amatic SC", cursive;
@@ -43,7 +44,7 @@ p {
   top: 0;
   width: 100%;
   background-color: cadetblue;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 .header__name {
   flex: 2 1 auto;
@@ -77,14 +78,13 @@ p {
   justify-content: space-evenly;
   margin: 0;
   align-content: center;
-  background-color: crimson;
 }
 .video-wrapper {
   flex: 1 1 31.33%;
   display: flex;
   align-items: center;
   margin: 0.25rem;
-  min-width: 300px;
+  min-width: 18.75em;
 }
 .about__video {
   width: 100%;
@@ -92,9 +92,9 @@ p {
 .about__text {
   flex: 1 1 60%;
   margin: 0.25rem;
-  min-width: 300px;
+  min-width: 18.75em;
 }
-@media (max-width: 49.3125em) {
+@media (max-width: 51em) {
   .about__text {
     display: flex;
     flex-flow: column nowrap;
@@ -103,10 +103,58 @@ p {
     align-self: center;
   }
 }
+.txt-ctr {
+  text-align: center;
+}
 .products__wrapper {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+}
+.card {
+  margin: 0.25rem;
+  padding: 0.5rem;
+  border: 2px dotted #000;
+  flex: 0 15rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 .card__img {
-  width: 5em;
+  width: 5rem;
+}
+.card__pricing {
+  font-style: italic;
+}
+.card__list {
+  list-style-type: circle;
+}
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact__form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.contact__id {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.contact__component {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 2% 2% 2%;
+}
+.contact__component--id {
+  flex: 0 1 46%;
+}
+@media (max-width: 30em) {
+  .contact__component--id {
+    flex: 1 1 48%;
+  }
 }
