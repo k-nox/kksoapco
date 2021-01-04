@@ -9,6 +9,20 @@ body {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   width: 100%;
+  background-color: rgb(219, 219, 219);
+  color: #000;
+}
+/* 
+  TO DO ON REVISIT: 
+    1. review https://bits.theorem.co/css-pro-tips-responsive-font-sizes-and-when-to-use-which-units/
+      1.a. TL;DR: try setting html font-size to calc(1em+1vw) for responsive typography & clean up media queries
+    2. switch from max-width to min-width - mobile first! - first make it look good at 320px (20em), then scale up
+*/
+:focus-visible {
+  outline: 4px dashed #000;
+}
+:focus:not(:focus-visible) {
+  outline: none;
 }
 input,
 textarea {
@@ -21,12 +35,12 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-family: "Architects Daughter", cursive;
-  font-size: 2rem;
+  font-family: "Amatic SC", cursive;
+  font-size: 3rem;
 }
 h3 {
-  font-family: "Architects Daughter", cursive;
-  font-size: 1.5rem;
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
 }
 small {
   font-size: 0.625rem;
@@ -37,13 +51,24 @@ ul {
 p {
   margin: 1em 0;
 }
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 133);
+}
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+.section {
+  scroll-margin-top: 6.25em;
+  margin: 0 0 2% 0;
+}
 .header {
   display: flex;
   flex-flow: row wrap;
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: cadetblue;
+  background-color: rgba(107, 164, 166, 0.9);
   margin-bottom: 0.5rem;
 }
 .header__name {
@@ -71,12 +96,32 @@ p {
 }
 .nav-list__item {
   padding: 1em;
+  font-variant: small-caps;
+}
+@media (max-width: 55em){
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.75rem;
+  }
+  .header__logo {
+    width: 4.5rem;
+  }
+  .header {
+    flex-flow: column wrap;
+  }
+  .header__name {
+    justify-content: center;
+  }
+  .nav-list {
+    justify-content: space-around;
+  }
 }
 .about {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  margin: 0;
   align-content: center;
 }
 .video-wrapper {
@@ -119,6 +164,7 @@ p {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  background-color: rgba(107, 164, 166, 0.25);
 }
 .card__img {
   width: 5rem;
@@ -153,8 +199,37 @@ p {
 .contact__component--id {
   flex: 0 1 46%;
 }
-@media (max-width: 30em) {
+@media (max-width: 34em) {
   .contact__component--id {
     flex: 1 1 48%;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  .header {
+    flex-flow: column wrap;
+  }
+  .header__logo {
+    width: 3.75rem;
+  }
+}
+@media (max-width: 27em) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  .header__logo {
+    width: 3rem;
   }
 }
