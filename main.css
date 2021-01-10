@@ -13,7 +13,7 @@ body {
   color: #000;
 }
 /* 
-  TO DO ON REVISIT: 
+  TODO: ON REVISIT: 
     1. review https://bits.theorem.co/css-pro-tips-responsive-font-sizes-and-when-to-use-which-units/
       1.a. TL;DR: try setting html font-size to calc(1em+1vw) for responsive typography & clean up media queries
     2. switch from max-width to min-width - mobile first! - first make it look good at 320px (20em), then scale up
@@ -55,7 +55,9 @@ a {
   text-decoration: none;
   color: rgb(0, 0, 133);
 }
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   text-decoration: underline;
 }
 .section {
@@ -98,7 +100,7 @@ a:hover, a:focus, a:active {
   padding: 1em;
   font-variant: small-caps;
 }
-@media (max-width: 55em){
+@media (max-width: 55em) {
   h1 {
     font-size: 3.5rem;
   }
